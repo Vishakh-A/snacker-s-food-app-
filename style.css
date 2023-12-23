@@ -1,0 +1,351 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+    
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+
+
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+      text-align: center;
+    }
+    .row.content {height:auto;} 
+  }
+  .img_logo{
+    width: 150px;
+    border-radius: 50%;
+    transform: rotate(-2deg );
+    margin: 5px;
+  }
+  .bg_color{
+    background-color: #f5f5f5;
+  }
+  .menubutton{ 
+    margin-top: 5%;
+    margin-left:0px
+
+
+  }
+  .menubutton button{
+    margin: 15px;
+    border: 2px solid indianred;
+    border-radius: 20px;
+    padding: 5px;
+     width: 100px;
+     color: indianred;
+     box-shadow: none;
+     transition: box-shadow .5s;
+     
+     
+  }
+.simplibtn{
+  margin-top: 2.7%;
+  
+ 
+}
+.simplibtn button{
+  width: fit-content;
+}
+.navbar-inverse{
+  background-color: #f5f5f5;
+}
+.food{
+  font-weight: bolder;
+  color:#FB9577;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+  /* margin: auto;
+   */
+}
+
+button:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgb(179, 177, 177);
+  /* padding: 6px; */
+}
+
+a{
+  color: black;
+}
+
+.item{
+  display:inline-block;
+
+}
+.fa-solid{
+  pointer-events: none;
+}
+
+.item-img{
+  display: inline-block;
+  margin: 10px;
+  
+}
+.hunt{
+  font-family: 'Aclonica', sans-serif;
+  color: indianred;
+}
+a:hover{
+  text-decoration: none;
+}
+.foodimg{
+  width: 130px;
+  border-radius: 50%;
+  padding: 0px;
+  margin-top: 0px;
+  margin: auto;
+  display: block;
+  height: 130px;
+  border: 3px solid white;
+}
+.item-img{
+  background:rgb(255, 224, 229);
+  /* border: 1px solid white; */
+
+}
+#vegContainer .item-img{
+  background: rgb(222, 251, 222);
+}
+#drinksContainer .item-img{
+  background: rgb(211, 233, 246);
+}
+#snacksContainer .item-img{
+  background: rgb(246, 246, 217);
+}
+.badge{
+  color: gold;
+  background: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 7px;
+  border-radius: 50px;
+}
+.like-btn{
+  background: white;
+  color: black;
+  margin-left: 80px;
+  cursor: pointer;
+
+}
+.cart{
+  background-color: #ff0000;
+  color: white;
+}
+.card{
+  padding: 5px;
+  color: black;
+}
+.fa-heart{
+  /* font-weight: bold; */
+  font-size: larger;
+}
+.sidenav p a{
+  line-height: 3;
+  font-weight: 600;
+  color: rgb(161, 161, 161);
+  margin-left:10px ;
+
+}
+.sidenav p:hover {
+  color: black;
+}
+p  img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.go-hr{
+  width: 18%;
+  border:3px #FB9577 solid;
+  border-radius:20px;
+  margin-left:27% ;
+  margin-top: 0px;
+}
+.fa-heart{
+  pointer-events: none;
+}
+#cartContainer{
+  font-size: 20px;
+  height: fit-content;
+  width: 100%;
+}
+#cartContainer h1{
+  margin-bottom: 20px;
+}
+#foodContainer{
+  display: block;
+  overflow: auto;
+  height: calc(100vh - 150px);
+}
+
+.displayChangeAn{
+  transition: display 1s;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+.food-items{
+  margin-top: 10px;
+
+}
+.food-items h1{
+  text-decoration: underline;
+}
+
+.sm-food{
+  display: block;
+  /* text-align: center; */
+}
+
+#totalPrice{
+  font-weight: 600;
+  text-align: right;
+}
+#totalPrice span{
+  color:#FB9577;
+}
+.cartitem{
+
+  height:fit-content;
+  background-color: #f1efef;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+.cartitem img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.itemname
+{
+  display: inline-block;
+  margin-left: 30px;
+  /* background: blue; */
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+.itemname h4
+{
+  font-weight: 800; 
+  font-size: 25px;
+}
+.itemname p
+{
+  font-weight:bolder;
+  color: #807f7f;
+  font-size: 15px;
+}
+.cartitem button{
+  right: 10px;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-10px,-50%);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+@media  screen and (max-width: 769px) {
+
+  .img_logo{
+    display: none;
+  }
+  li h1{
+    display: none;
+  }
+  .sm-food{
+    display: block;
+    text-align: center;
+  }
+  .go-hr{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .sidenav p {
+    display: inline-block;
+   
+  }
+
+  .sidenav p a{
+    padding: 5px;
+    background: #FB9577;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+  }
+  .sidenav p a:hover{
+    background: #d06747;
+    /* color: #f1f1f1; */
+  }
+  .menubutton{
+    text-align: center;
+  }
+  .menubutton li{
+    display: inline;
+    text-align: center;
+  }
+  .simplibtn{
+    text-align: center;
+  }
+  #foodContainer{
+    text-align: center;
+  }
+  /* #pizzaContainer{
+    width: fit-content;
+  } */
+  #cartContainer{
+    /* text-align: center; */
+  }
+  .cartitem img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .itemname{
+    margin-left: 2px;
+    /* background: red; */
+    width:50%;
+  }
+  .cartitem button{
+    right: 0px;
+    transform: translate(0px,-50%);
+
+  }
+}
+
+
+
+
+
+

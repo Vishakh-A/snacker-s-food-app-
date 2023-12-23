@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <link rel="stylesheet" href="./style.css"> 
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid bg_color">
+    <div class="col-md-2">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a  href="#"><img class="navbar img_logo " src="/img/logo.png " alt=""></a>
+    </div>
+</div>
+<div class="col-md-7">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav menubutton">
+        <li><button><i class="fa-solid fa-magnifying-glass"></i> search</button></li>
+        <li><button><i class="fa-solid fa-tags"></i> Offers</button></li>
+        <li><button id="items"><i class="fa-solid fa-cart-plus item"></i> Items</button></li>
+    </ul>
+
+    
+    </div>
+    </div>
+    
+  
+      
+      <div class="col-md-3"></div>
+      <ul class="nav navbar-nav  menubutton simplibtn">
+        <li><button><i class="fa-regular fa-user"></i> Simplilearn!</button></li>
+      </ul>
+      
+    </div>
+  <!-- </div> -->
+</nav>
+<div class="container-fluid text-center bg_color">    
+  <div class="row content ">
+    <div class="col-md-2 sidenav bg_color text-left">
+      <p><a href="#">About</a></p>
+      <p><a href="#">Services</a></p>
+      <p><a href="#">Your Orders</a></p>
+      <p><a href="#">Wishlist</a></p>
+      <p><a href="#">Cart</a></p>
+      <p><a href="#">Contact</a></p>
+      <p><a href="#">Checkout</a></p>
+    </div>
+    <div class="col-md-6 text-left bg_color"> 
+     
+      
+      <div id="foodContainer" class="displayChangeAn">
+        <!-- <div class="cartitem"> 
+          <img src="${cart.imgSrc}" alt="">
+          <div class="itemname">
+          <h4>${cart.name}</h4>
+          <p>Price : ₹ ${cart.price} </p>
+        </div>
+        <button class="delBtn" data-id="${cart.id}">
+        <i class="fa-solid fa-trash" id="delete" ></i>
+      </button>
+      </div> -->
+      <div id="pizzaContainer" class="food-items">
+        <h1 class="food sm-food">Pizza</h1>
+      </div>
+       
+      <div id="mandiContainer" class="food-items">
+        <h1 class="food sm-food">Mandi</h1>
+
+      </div>
+
+      <div id="biriyaniContainer" class="food-items">
+        <h1 class="food sm-food">Biriyani</h1>
+
+      </div>
+
+      <div id="vegContainer" class="food-items">
+        <h1 class="food sm-food">Vegetarian</h1>
+
+      </div>
+
+      <div id="curryContainer" class="food-items">
+        <h1 class="food sm-food">Curry</h1>
+
+      </div>
+
+      <div id="snacksContainer" class="food-items">
+        <h1 class="food sm-food">Snacks</h1>
+
+      </div>
+
+      <div id="drinksContainer" class="food-items">
+        <h1 class="food sm-food">Drinks</h1>
+
+      </div>
+      </div>
+       
+       <div id="cartContainer" class="displayChangeAn">
+        <h1>Items added in wishlist</h1>
+        <div id="listContainer">
+
+        </div>
+        <h4 id="totalPrice"></h4>
+       </div>
+
+    </div>
+    <div class="col-md-4  bg_color" id="goForHunt">
+      <h1 class="hunt">Go For Hunt</h1>
+      <hr class="go-hr"> 
+      <div class=" sidena bg_color text-left" style="padding-left:30%">
+
+        <a  href="#pizzaContainer"> <p class="foodMenu"><img src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*" alt="" srcset="">Pizza</p></a>
+        <a href="#mandiContainer"><p class="foodMenu" ><img src="https://lh3.googleusercontent.com/a1hwN_FijwoYqveP2ZEUE3RmP-4sq7UITkUDhcTXzBeATWc5u7CwSz21KsJV6yL3PY8DZ58s81LkE0M8DEWMLIudaW3SK1zyHs4NOSf16g=w512-rw" alt="">mandi</p></a>
+        <a href="#biriyaniContainer"><p class="foodMenu"><img src="https://bonmasala.com/wp-content/uploads/2022/10/mutton-biriyani-recipe.jpeg" alt="">Biriyani</p></a>
+        <a href="#vegContainer"><p class="foodMenu"><img src="https://nishkitchen.com/wp-content/uploads/2017/11/Veg-Biryani-5B.jpg" alt="">Vegetarian</p></a>
+        <a href="#curryContainer"><p class="foodMenu"><img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Curry-recipe-750x750.jpg" alt="">Curry</p></a>
+        <a href="#snacksContainer"><p class="foodMenu"><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl_sunitha/Kerala_Style_Pazham_Pori_Recipe_Banana_Fritters_Recipe_.jpg" alt="">Snacks</p></a>
+        <a href="#drinksContainer"><p class="foodMenu"><img src="https://thefamiliarkitchen.com/wp-content/uploads/2020/03/IMG_2677-scaled.jpg" alt="">Drinks</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer> -->
+
+<script src="./js.js" type="module"></script>
+</body>
+</html>
